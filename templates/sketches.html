@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <section class="contact-section">
+        <div class="contact-container3">
+            <p class="about-description2">
+                I have always struggled to keep a journal regularly and have always admired of those who could find an outlet in writing about their day, especially after a difficult one. However, through sketching—capturing even the mundane aspects of life—I discovered that the quality of my lines and brushstrokes could reflect and help me recall the day I had experienced. And so, art became my way of journaling: my favorite pastime, my meditation, my practice, and my life.
+            </p>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <div class="gallery-container">
+            {% for i in range(1, 13) %}
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/sketches/sketch' ~ i ~ '.jpg') }}" alt="Sketch {{ i }}">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="image-modal" class="modal" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-img" src="" alt="Modal Image">
+                <br>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
