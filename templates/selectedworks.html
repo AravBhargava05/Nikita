@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work5.JPG') }}"
+                     data-description=""
+                     alt="Work 5">
+                <p class="image-title">A Rainy Afternoon and a Time For Reflection</p>
+                <p class="image-title2">2023</p><br>
+                <p class="image-description" style="display: none;">Chalk on black paper, raindrops for texture; 59cm x 84cm</p>
+                <p class="image-description2" style="display: none;">
+                    Much of my work has unfolded under the gentle rhythm of the falling rain - in this self-portrait I reflect on how raindrops stir memories of times in my life that have sculpted my journey up until now.
+                </p>
+            </div>
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work1.JPG') }}"
+                     data-description="1"
+                     alt="Work 1">
+                <p class="image-title">The Value of Art</p>
+                <p class="image-title2">2024</p><br>
+                <p class="image-description" style="display: none;">Ink on collage of recycled newsprint and paper; 146cm x 103cm</p>
+                <p class="image-description2" style="display: none;">
+                    My idea was to make a room on the inside of which, a solitary chair bathed in a single light. Its exterior symbolizes the world's truths and conflicts, while inside, self-reflection about my personal life, emotions, and experiences. Using found materials, the installation conveys a sense of disbelief and not belonging. Just like a journalist, on the exterior I document the war in Ukraine and its effect on Ukraine and the rest of the world. However, my unintentional expression of emotions seen in my art style and strokes here expresses the historian's failure at finding complete objectivity.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <div class="gallery-container2">
+            <div class="image-wrapper2" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work4.JPG') }}"
+                    data-description="4"
+                    alt="Work 4">
+                <p class="image-title">A Conversation</p>
+                <p class="image-title2">2024</p><br>
+                <p class="image-description" style="display: none;">Installation out of cardboard, drawings: charcoal, chalk and collage; 188cm x 546cm</p>
+                <p class="image-description2" style="display: none;">
+            My idea was to make a room on the inside of which, a solitary chair bathed in a single light. Its exterior symbolizes the world's truths and conflicts, while inside, self-reflection about my personal life, emotions, and experiences. Using found materials, the installation conveys a sense of disbelief and not belonging...
+        </p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work6.JPG') }}"
+                    data-description="6"
+                    alt="Work 6">
+                <p class="image-title">Eye Contact</p>
+                <p class="image-title2">2023</p><br>
+                <p class="image-description" style="display: none;">Walnut ink on a collage of reused sketches and my developed film roll; 112cm x 103cm</p>
+                <p class="image-description2" style="display: none;">
+                This painting portrays my art as a sanctuary, where I've sought refuge to channel my inner struggles and emotions; art has become my coping mechanism in recent years.
+                </p>
+            </div>
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work2.JPG') }}"
+                     data-description="2"
+                     alt="Work 2">
+                <p class="image-title">Sometimes</p>
+                <p class="image-title2">2023</p><br>
+                <p class="image-description" style="display: none;">Charcoal, chalk, ink, oils, paint markers on collage of old drawings and sketches; 133cm x 119cm
+                </p>
+                <p class="image-description2" style="display: none;">
+                    Focusing on experimentation and illustrating my emotions, here, I presented mostly the rollercoaster that has been my life since the start of the war in Ukraine. Here I illustrate my struggle with admitting the possibility of my never being able to come back home.
+                </p>
+            </div>
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work12.JPG') }}"
+                     data-description="12"
+                     alt="Work 12">
+                <p class="image-title">"To her it seemed that certain places on Earth must produce happiness like the plants that thrive in a certain soil and are stunted everywhere else" - G. Flaubert in Mme Bovary</p><br>
+                <p class="image-title2">2024</p><br>
+                <p class="image-description" style="display: none;">Chalk on black paper, raindrops for texture; 59cm x 84cm
+                </p>
+                <p class="image-description2" style="display: none;">
+                    "To her it seemed that certain places on Earth must produce happiness like the plants that thrive in a certain soil and are stunted everywhere else" - G. Flaubert in Mme Bovary
+                </p>
+            </div>
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work9.JPG') }}"
+                     data-description="9"
+                     alt="Work 9">
+                <p class="image-title">With Time</p>
+                <p class="image-title2">2024</p><br>
+                <p class="image-description" style="display: none;">Mixed media; 84cm x 119cm
+                </p>
+                <p class="image-description2" style="display: none;">
+                    My most experimental work has coincided with my transformative teenage years. Naturally, this experimentation with different styles has helped me develop a more consistent artistic voice and, in many ways, discover myself.
+Many of the portraits I sketch are composed of characters—figures I create without references or based on the gestures of my friends as they write or work, reimagining their poses with characters of my own design. By the end of my high school art journey, I had begun to develop a distinct stylistic approach to my portraits.
+This piece is a collage of my daily sketches and scrapped work, repurposed into something more significant—almost like a form of recycling. The result is a composition where individual portraits come together in a cohesive and meaningful way.
+                </p>
+            </div>
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work10.JPG') }}"
+                     data-description="10"
+                     alt="Work 10">
+                <p class="image-title">My Desk</p>
+                <p class="image-title2">2024</p><br>
+                <p class="image-description" style="display: none;">Installation
+                </p>
+                <p class="image-description2" style="display: none;">
+                    Sketching and art, in general, have become an essential part of my life. Like many artists, I use them as a way to process my anxieties and emotions—whether positive or negative. At times, I struggle to articulate my feelings through words and even feel awkward opening up to my closest friends. Instead, I express myself through painting, drawing, printing, photography, and other forms of art, creating something every day.
+                    My desk in my art studio is a reflection of this passion. It embodies both the creative energy that drives me and the chaos that sometimes exists in my mind. Yet, despite the disorder, I always find myself drawn back to it—whether to plan my next project, read for inspiration, or edit a video. My art desk has become my sanctuary, a space of creativity and solace, and I believe everyone should have a place like this for themselves.
+                    With this project, my goal was to showcase my work and how it has helped me navigate my emotions while offering viewers a deeply personal insight into my artistic world. I wanted them to physically engage with the installation—flipping through my sketchbooks, reading my notes, exploring the books that inspire me, and experiencing my desk in its natural, everyday state of creative disorder. Though deeply personal, this installation was an invitation for viewers to connect with me—not just as an artist but as a person—and to understand the profound role art has played in my life.
+                    To balance chaos with coherence during the art exhibition this was presented in, I chose to position the desk away from the wall, transforming it into an island where viewers could walk around freely. This arrangement encouraged full immersion in the space, reinforcing the desk as both a physical and psychological centerpiece of my creative process.
+                </p>
+            </div>
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work8.JPG') }}"
+                     data-description="8"
+                     alt="Work 8">
+                <p class="image-title">Peace</p>
+                <p class="image-title2">2023</p><br>
+                <p class="image-description" style="display: none;">Charcoal on Paper; 119cm x 84cm
+                </p>
+                <p class="image-description2" style="display: none;">
+                    This is the first in my series of visual analyses of poetry, inspired by Turner’s notion that visual art is inseparable from poetry. In this piece, I focus on my personal interpretation of Rupert Brooke’s poem Peace. To Brooke, peace in this poem is found in dying at war. Death, and consequently honor, is when peace is achieved. However, as I attempt to illustrate Brooke’s ideas, my own pain, sorrow, and disgust with conflict and war reshape the direction of the 'peace' that Brooke associates with death.
+                    Key words from Brooke’s poem guide the viewer’s eyes throughout the drawing, as the process of creating this piece began with writing out Brooke’s poem in charcoal as a base layer before the drawing. As I illustrated Brooke’s interpretation of peace, the question of what and, most importantly, who is left haunting my thoughts. I felt compelled to provide greater context to the poem’s setting to convey the pain that accompanies death—a pain that overshadows the 'peace' the dying soldier might experience. This 'peace,' I realized, is not felt by the soldier who dies, but rather leaves those watching—the loved ones, friends, or even strangers—burdened with grief.
+                    To highlight this, I added another soldier in the foreground, one who, while turned away from the dying soldier in the background, is clearly aware of and anticipates the other soldier’s death though is too pained to look back and see the death of a fellow soldier.
+                    There is a sense of silence in the scene of this illustration, but is it the peaceful silence that Brooke intends for the reader to imagine? The omniscient narrative style of the drawing offers an outsider’s perspective on death rather than a first-person account. This distance allows us, as viewers, time to reflect on whether silence and death for a country truly bring peace.
+                </p>
+            </div>
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work7.JPG') }}"
+                     data-description="7"
+                     alt="Work 7">
+                <p class="image-title">Somehow</p>
+                <p class="image-title2">2023</p><br>
+                <p class="image-description" style="display: none;">Charcoal on paper; 290cm x 120cm
+                </p>
+                <p class="image-description2" style="display: none;">
+                    As a Ukrainian, the war has led me to question the very definition of the abstract noun peace. Will it ever truly be achieved? And if external peace can exist, is it merely a façade, concealing the turmoil of inner conflict? Does a definitive meaning even exist—and if so, would knowing it bring us any closer to peace?
+From the ironically patriotic yet ominous poetry of Rupert Brooke to the raw, despondent, and painfully honest verses of Siegfried Sassoon, literature has profoundly shaped this artwork. Most notably, this piece is an artistic response to Sassoon’s poem To Any Dead Officer, from which striking, powerful, and introspective words and phrases guide the viewer’s eye across the drawing.
+Much like Don McCullin’s war photography, I incorporated inanimate objects—destroyed trees, buildings, and planes—not only to convey the devastation of war but also to frame the figures in the foreground. This interplay of destruction and composition serves to emphasize how the surrounding chaos shapes and weighs on human emotion.
+                </p>
+            </div>
+            <div class="image-wrapper" onclick="openModal(this)">
+                <img src="{{ url_for('static', filename='img/selected/work3.JPG') }}"
+                     data-description="3"
+                     alt="Work 3">
+                <p class="image-title">Is It Worth It?</p>
+                <p class="image-title2">2024</p><br>
+                <p class="image-description" style="display: none;">Charcoal on paper and mdf; 4 by 221cm x 120cm</p>
+                <p class="image-description2" style="display: none;">
+                    Here, I explored the concept of the final outcome and whether it is ultimately worth the effort. Initially, this project centered around a ballerina and dance, but I chose to expand the idea to show that a "performance" as an end result is not confined to dance alone. Instead, I examined various professions—such as musicians, nurses, and writers—each demonstrating their own form of performance, their own final outcome, and their own pursuit of fulfillment.</p>
+            </div>
+            </div>
+        </div>
+        <div id="image-modal" class="modal" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-img" src="" alt="Modal Image">
+                <p id="modal-text" class="modal-text"></p>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
