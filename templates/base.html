@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mobilis{% endblock %}</title>
+    <link href="static/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTrW0340VNS3pu_Exu2j3sRFl4W4x1TuE6zg&s" alt="Logo" class="logo-img" /></a>
+                <a href="/"><span class="logo-text">Mobilis</span></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/problem">The Problem</a></li>
+                <li><a href="/product">Our Product</a></li>
+                <li><a href="/team">The Team</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Mobilis LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
