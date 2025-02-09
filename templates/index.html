@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Nikita{% endblock %}
+
+{% block content %}
+<section class="gallery-section">
+    <div class="gallery-container2">
+        <div class="image-wrapper" onclick="openModal(this)">
+            <img src="{{ url_for('static', filename='img/five.jpg') }}" alt="Gallery Image 3">
+        </div>
+        <div class="image-wrapper" onclick="openModal(this)">
+            <img src="{{ url_for('static', filename='img/one.JPG') }}" alt="Gallery Image 2">
+        </div>
+        <div class="image-wrapper" onclick="openModal(this)">
+            <img src="{{ url_for('static', filename='img/three.JPG') }}" alt="Gallery Image 4">
+        </div>
+        <!-- Add additional images here as needed -->
+    </div>
+</section>
+{% endblock %}
