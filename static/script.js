@@ -34,3 +34,9 @@ function closeModal() {
 // Add click handler to the close button
 document.querySelector('.close').addEventListener('click', closeModal);
 
+const images = ["work1.JPG", "work2.JPG", "image3.JPG", "work4.JPG", "work5.JPG", "image6.JPG", "work7.JPG", "work8.JPG", "image9.JPG", "work10.JPG", "work11.JPG", "image12.JPG"];
+images.forEach(src => {
+  const img = new Image();
+  img.src = src;
+});
+
