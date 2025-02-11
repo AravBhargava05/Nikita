@@ -151,7 +151,8 @@ footer p {
     font-size: 18px; /* Comfortable size for readability */
     line-height: 1.8; /* Space between lines for better readability */
     color: #333; /* Dark gray text for a softer look than pure black */
-    text-align: center; /* Center-align the text */
+    text-align: left; /* Center-align the text */
+    max-width: 800px; /* Limit the width for better readability on wider screens */
 }
 
 .image-title {
