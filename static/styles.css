@@ -88,7 +88,7 @@ footer p {
 /* Gallery Section */
 
 .gallery-section {
-    padding: 40px 120px; /* Reduce padding around the gallery */
+    padding: 40px 12px; /* Reduce padding around the gallery */
     margin: 0 auto; /* Center the gallery section */
 }
 
