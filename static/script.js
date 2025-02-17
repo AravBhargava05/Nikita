@@ -40,3 +40,21 @@ images.forEach(src => {
   img.src = src;
 });
 
+let lastScrollY = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+  const header = document.getElementById('header');
+  const currentScrollY = window.pageYOffset;
+
+  // If scrolling down and past a 50px threshold, hide the header
+  if (currentScrollY > lastScrollY && currentScrollY > 50) {
+    header.classList.add('header-hidden');
+  } else {
+    // If scrolling up, show the header
+    header.classList.remove('header-hidden');
+  }
+
+  // Update last scroll position
+  lastScrollY = currentScrollY;
+});
+
