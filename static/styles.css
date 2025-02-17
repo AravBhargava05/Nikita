@@ -7,14 +7,12 @@ body {
 }
 
 /* Header */
-
 header {
     background-color: #fff; /* White background */
     color: #000; /* Black text */
     padding: 10px 0;
     position: fixed;
     top: 0;
-    justify-content: center;
     z-index: 1000;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     font-family: 'PT Sans', sans-serif;
@@ -50,6 +48,28 @@ header {
     color: #555; /* Slightly darker text on hover */
 }
 
+/* Header container styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff; /* or whichever background you prefer */
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+/* Class to hide the header (moves it off the top) */
+.header-hidden {
+    transform: translateY(-100%);
+}
+
+/* Ensure main content isn’t hidden behind the fixed header */
+main {
+    padding-top: 80px; /* Adjust based on your header height */
+}
+
+/* Existing Navigation CSS */
 nav ul {
     list-style: none;
     display: flex;
@@ -95,7 +115,7 @@ footer p {
 /* Gallery Section */
 
 .gallery-section {
-    padding: 40px 12px; /* Reduce padding around the gallery */
+    padding: 40px 10px; /* Reduce padding around the gallery */
     margin: 0 auto; /* Center the gallery section */
 }
 
@@ -158,8 +178,7 @@ footer p {
     font-size: 18px; /* Comfortable size for readability */
     line-height: 1.8; /* Space between lines for better readability */
     color: #333; /* Dark gray text for a softer look than pure black */
-    text-align: left; /* Center-align the text */
-    max-width: 800px; /* Limit the width for better readability on wider screens */
+    text-align: center; /* Center-align the text */
 }
 
 .image-title {
@@ -174,7 +193,6 @@ footer p {
     font-family: 'PT Sans', sans-serif;
     font-size: 8px;
     color: #fff;
-    margin-bottom: 10px;
 }
 
 .image-title2 {
@@ -333,7 +351,7 @@ footer p {
     text-align: left; /* Center align text */
     border-radius: 5px; /* Optional: Adds slightly rounded corners */
     display: block; /* Ensure it's a block-level element */
-    margin-bottom: 20px; /* Add spacing between image and text */
+    padding-bottom: 30px; /* Add spacing between image and text */
 }
 
 
