@@ -7,15 +7,21 @@ body {
 }
 
 /* Header */
+
 header {
     background-color: #fff; /* White background */
     color: #000; /* Black text */
     padding: 10px 0;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     font-family: 'PT Sans', sans-serif;
+}
+
+  /* When the header has this class, it slides up out of view */
+.header-hidden {
+    transform: translateY(-100%);
 }
 
 .header-container {
