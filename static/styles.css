@@ -340,7 +340,7 @@ footer p {
 
 .modal-text {
     font-family: 'PT Sans', sans-serif;
-    font-size: 1.2vw; /* Responsive text size based on viewport width */
+    font-size: 1.8vw; /* Responsive text size based on viewport width */
     color: #ccc;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
     width: 80%; /* Set a width that scales */
