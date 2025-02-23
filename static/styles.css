@@ -234,7 +234,6 @@ footer p {
     font-family: 'PT Sans', sans-serif;
     line-height: 1.8;
     padding: 20px; /* Add padding for spacing inside the border */
-    border: 2px solid #000; /* Add a black 2px border */
 }
 
 .contact-container2 {
