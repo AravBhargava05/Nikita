@@ -47,7 +47,7 @@ window.addEventListener('scroll', () => {
   const currentScrollY = window.pageYOffset;
 
   // If scrolling down and past a 50px threshold, hide the header
-  if (currentScrollY > lastScrollY && currentScrollY > 100) {
+  if (currentScrollY > lastScrollY && currentScrollY > 200) {
     header.classList.add('header-hidden');
   } else {
     // If scrolling up, show the header
